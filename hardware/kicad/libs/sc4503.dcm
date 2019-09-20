@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SC4503
+D  current-mode step-up regulator boost 1.4A, tsot-23
+K boost regulator step-up 
+F http://www.semtech.com/images/datasheet/sc4503.pdf
+$ENDCMP
+#
+#End Doc Library

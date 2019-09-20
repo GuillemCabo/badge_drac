@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74LVC1G157
+D Single 2 to 1 Multiplexer, Low-Voltage CMOS
+K Single Mux CMOS
+F http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf
+$ENDCMP
+#
+#End Doc Library

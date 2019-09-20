@@ -1,0 +1,238 @@
+EESchema Schematic File Version 4
+LIBS:keysafe_v2-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 6
+Title "keysafe"
+Date "2018-06-05"
+Rev "rev1"
+Comp "AVRYDE 2000 S.L.U."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_magnetic-sensors:LIS3MDLTR U3
+U 1 1 5B1BC662
+P 4400 2950
+F 0 "U3" H 4400 3750 60  0000 C CNN
+F 1 "LIS3MDLTR" H 4400 3644 60  0000 C CNN
+F 2 "fp1:VFLGA-12_2X2mm" H 4600 3150 60  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf" H 4600 3250 60  0001 L CNN
+F 4 "497-13892-1-ND" H 4600 3350 60  0001 L CNN "Digi-Key_PN"
+F 5 "LIS3MDLTR" H 4600 3450 60  0001 L CNN "MPN"
+F 6 "Sensors, Transducers" H 4600 3550 60  0001 L CNN "Category"
+F 7 "Magnetic Sensors - Linear, Compass (ICs)" H 4600 3650 60  0001 L CNN "Family"
+F 8 "http://www.st.com/content/ccc/resource/technical/document/datasheet/54/2a/85/76/e3/97/42/18/DM00075867.pdf/files/DM00075867.pdf/jcr:content/translations/en.DM00075867.pdf" H 4600 3750 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/stmicroelectronics/LIS3MDLTR/497-13892-1-ND/4309737" H 4600 3850 60  0001 L CNN "DK_Detail_Page"
+F 10 "SENSOR MAGMTR I2C/SPI 12LGA" H 4600 3950 60  0001 L CNN "Description"
+F 11 "STMicroelectronics" H 4600 4050 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 4600 4150 60  0001 L CNN "Status"
+F 13 "2433083" H 0   0   50  0001 C CNN "FARNELL #"
+	1    4400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L keysafe_v1-rescue:C C6
+U 1 1 5B1BC863
+P 2625 3025
+F 0 "C6" H 2650 3125 50  0000 L CNN
+F 1 "0.1uf" H 2650 2925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2663 2875 50  0001 C CNN
+F 3 "" H 2625 3025 50  0001 C CNN
+F 4 "2409037" H 550 1125 50  0001 C CNN "FARNELL #"
+F 5 "C0603C104J5RACTU" H 550 1125 50  0001 C CNN "MPN"
+F 6 "" H 550 1125 50  0001 C CNN "PLACE"
+F 7 "" H 550 1125 50  0001 C CNN "RS #"
+	1    2625 3025
+	-1   0    0    1   
+$EndComp
+$Comp
+L keysafe_v1-rescue:C C7
+U 1 1 5B1BC86E
+P 2950 3025
+F 0 "C7" H 2975 3125 50  0000 L CNN
+F 1 "10uF" H 2975 2925 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2988 2875 50  0001 C CNN
+F 3 "" H 2950 3025 50  0001 C CNN
+F 4 "2776900" H 2975 3225 50  0001 C CNN "FARNELL #"
+F 5 "C0805X106K9RACTU" H 2975 3225 50  0001 C CNN "MPN"
+F 6 "" H -1075 1375 50  0001 C CNN "PLACE"
+F 7 "" H -1075 1375 50  0001 C CNN "RS #"
+	1    2950 3025
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 2500 2950 2875
+Wire Wire Line
+	2625 2875 2625 2500
+$Comp
+L power:+3.3V #PWR01
+U 1 1 5B1BC9F0
+P 2725 1925
+F 0 "#PWR01" H 2725 1775 50  0001 C CNN
+F 1 "+3.3V" H 2725 2065 50  0000 C CNN
+F 2 "" H 2725 1925 50  0001 C CNN
+F 3 "" H 2725 1925 50  0001 C CNN
+	1    2725 1925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 2500 2750 2500
+Wire Wire Line
+	2750 2500 2750 1925
+Wire Wire Line
+	2750 1925 2725 1925
+Connection ~ 2750 2500
+Wire Wire Line
+	2750 2500 2625 2500
+Wire Wire Line
+	2950 2500 2950 1950
+Wire Wire Line
+	2950 1950 4400 1950
+Wire Wire Line
+	4400 1950 4400 1975
+Connection ~ 2950 2500
+Wire Wire Line
+	4500 2350 4500 1975
+Wire Wire Line
+	4500 1975 4400 1975
+Connection ~ 4400 1975
+Wire Wire Line
+	4400 1975 4400 2350
+Text GLabel 3750 2850 1    60   Input ~ 0
+SCLK_ACC
+Text GLabel 5000 3150 2    60   Input ~ 0
+SDA_ACC
+$Comp
+L power:GND #PWR06
+U 1 1 5B1BEF97
+P 4400 3875
+F 0 "#PWR06" H 4400 3625 50  0001 C CNN
+F 1 "GND" H 4405 3702 50  0000 C CNN
+F 2 "" H 4400 3875 50  0001 C CNN
+F 3 "" H 4400 3875 50  0001 C CNN
+	1    4400 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3650 4500 3725
+Wire Wire Line
+	4500 3725 4400 3725
+Wire Wire Line
+	4400 3725 4400 3875
+Wire Wire Line
+	4400 3650 4400 3725
+Connection ~ 4400 3725
+$Comp
+L power:GND #PWR04
+U 1 1 5B1BF139
+P 2725 3400
+F 0 "#PWR04" H 2725 3150 50  0001 C CNN
+F 1 "GND" H 2730 3227 50  0000 C CNN
+F 2 "" H 2725 3400 50  0001 C CNN
+F 3 "" H 2725 3400 50  0001 C CNN
+	1    2725 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2725 3400 2725 3175
+Wire Wire Line
+	2725 3175 2625 3175
+Wire Wire Line
+	2950 3175 2725 3175
+Connection ~ 2725 3175
+Text GLabel 5150 2825 2    60   Input ~ 0
+INT_MAG
+Wire Wire Line
+	5150 2825 5050 2825
+Wire Wire Line
+	5050 2825 5050 2850
+Wire Wire Line
+	5050 2850 5000 2850
+$Comp
+L power:GND #PWR03
+U 1 1 5B1BF76E
+P 5925 3075
+F 0 "#PWR03" H 5925 2825 50  0001 C CNN
+F 1 "GND" H 5930 2902 50  0000 C CNN
+F 2 "" H 5925 3075 50  0001 C CNN
+F 3 "" H 5925 3075 50  0001 C CNN
+	1    5925 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3050 5925 3050
+Wire Wire Line
+	5925 3050 5925 3075
+Wire Wire Line
+	4400 3725 4300 3725
+Wire Wire Line
+	4300 3725 4300 3650
+$Comp
+L keysafe_v1-rescue:C C8
+U 1 1 5B1C032D
+P 3725 3250
+F 0 "C8" H 3750 3350 50  0000 L CNN
+F 1 "0.1uf" H 3750 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 3763 3100 50  0001 C CNN
+F 3 "" H 3725 3250 50  0001 C CNN
+F 4 "2409037" H 1650 1350 50  0001 C CNN "FARNELL #"
+F 5 "C0603C104J5RACTU" H 1650 1350 50  0001 C CNN "MPN"
+F 6 "" H 1650 1350 50  0001 C CNN "PLACE"
+F 7 "" H 1650 1350 50  0001 C CNN "RS #"
+	1    3725 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5B1C03AA
+P 3725 3550
+F 0 "#PWR05" H 3725 3300 50  0001 C CNN
+F 1 "GND" H 3730 3377 50  0000 C CNN
+F 2 "" H 3725 3550 50  0001 C CNN
+F 3 "" H 3725 3550 50  0001 C CNN
+	1    3725 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 3050 3725 3050
+Wire Wire Line
+	3725 3050 3725 3100
+Wire Wire Line
+	3725 3400 3725 3550
+$Comp
+L Device:R R1
+U 1 1 5B1C0CB3
+P 3425 2775
+F 0 "R1" H 3495 2821 50  0000 L CNN
+F 1 "10K" H 3495 2730 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 3355 2775 50  0001 C CNN
+F 3 "~" H 3425 2775 50  0001 C CNN
+F 4 "2332016" H 0   0   50  0001 C CNN "FARNELL #"
+F 5 "CRGH0603F10K" H 0   0   50  0001 C CNN "MPN"
+	1    3425 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2850 3750 2850
+Wire Wire Line
+	3800 2950 3425 2950
+Wire Wire Line
+	3425 2950 3425 2925
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5B1C1657
+P 3425 2625
+F 0 "#PWR02" H 3425 2475 50  0001 C CNN
+F 1 "+3.3V" H 3425 2765 50  0000 C CNN
+F 2 "" H 3425 2625 50  0001 C CNN
+F 3 "" H 3425 2625 50  0001 C CNN
+	1    3425 2625
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5000 2950
+$EndSCHEMATC

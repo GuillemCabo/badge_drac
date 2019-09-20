@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLV73333PDQNT
+D LDO 3.3V LOW DROP
+K LDO LOW DROP 3.3 X2SON
+F http://www.ti.com/lit/ds/symlink/tlv733p.pdf
+$ENDCMP
+#
+#End Doc Library

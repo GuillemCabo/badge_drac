@@ -1,0 +1,9 @@
+; pcb config
+[board]
+mask_color = green
+silk_color = white
+material = FR4
+thickness = 1.6
+
+[logo]
+logo = /mnt/42044B2E044B246F/Users/guill/OneDrive/Cabo\ Engineering/logo.png

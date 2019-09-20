@@ -1,0 +1,85 @@
+Air_Coils_SML_NEOSID	${KIGITHUB}/Air_Coils_SML_NEOSID.pretty	Github		HAMxx31A_HDMxx31A
+Buttons_Switches_SMD	${KIGITHUB}/Buttons_Switches_SMD.pretty	Github		The way you like them.
+* Buttons_Switches_ThroughHole	${KIGITHUB}/Buttons_Switches_ThroughHole.pretty	Github		The way you like them.
+Buzzers_Beepers	${KIGITHUB}/Buzzers_Beepers.pretty	Github		The way you like them.
+Capacitors_SMD	${KIGITHUB}/Capacitors_SMD.pretty	Github		The way you like them.
+Capacitors_Tantalum_SMD	${KIGITHUB}/Capacitors_Tantalum_SMD.pretty	Github		The way you like them.
+*Capacitors_ThroughHole	${KIGITHUB}/Capacitors_ThroughHole.pretty	Github		The way you like them.
+Choke_Axial_ThroughHole	${KIGITHUB}/Choke_Axial_ThroughHole.pretty	Github		The way you like them.
+Choke_Common-Mode_Wurth	${KIGITHUB}/Choke_Common-Mode_Wurth.pretty	Github		The way you like them.
+Choke_Radial_ThroughHole	${KIGITHUB}/Choke_Radial_ThroughHole.pretty	Github		The way you like them.
+Choke_SMD	${KIGITHUB}/Choke_SMD.pretty	Github		The way you like them.
+Choke_Toroid_ThroughHole	${KIGITHUB}/Choke_Toroid_ThroughHole.pretty	Github		The way you like them.
+Connectors_Molex	${KIGITHUB}/Connectors_Molex.pretty	Github		53047-A123
+* Connect	${KIGITHUB}/Connect.pretty	Github		The way you like them.
+Converters_DCDC_ACDC	${KIGITHUB}/Converters_DCDC_ACDC.pretty	Github		The way you like them.
+Crystals	${KIGITHUB}/Crystals.pretty	Github		The way you like them.
+Diodes_SMD	${KIGITHUB}/Diodes_SMD.pretty	Github		The way you like them.
+* Diodes_ThroughHole	${KIGITHUB}/Diodes_ThroughHole.pretty	Github		The way you like them.
+Discret	${KIGITHUB}/Discret.pretty	Github		The way you like them.
+Displays_7-Segment	${KIGITHUB}/Displays_7-Segment.pretty	Github		The way you like them.
+*Display	${KIGITHUB}/Display.pretty	Github		The way you like them.
+Divers	${KIGITHUB}/Divers.pretty	Github		The way you like them.
+EuroBoard_Outline	${KIGITHUB}/EuroBoard_Outline.pretty	Github		The way you like them.
+Fiducials	${KIGITHUB}/Fiducials.pretty	Github		The way you like them.
+Filters_HF_Coils_NEOSID	${KIGITHUB}/Filters_HF_Coils_NEOSID.pretty	Github		The way you like them.
+Fuse_Holders_and_Fuses	${KIGITHUB}/Fuse_Holders_and_Fuses.pretty	Github		The way you like them.
+Hall-Effect_Transducers_LEM	${KIGITHUB}/Hall-Effect_Transducers_LEM.pretty	Github		The way you like them.
+Heatsinks	${KIGITHUB}/Heatsinks.pretty	Github		The way you like them.
+Housings_DFN_QFN	${KIGITHUB}/Housings_DFN_QFN.pretty	Github		The way you like them.
+Housings_DIP	${KIGITHUB}/Housings_DIP.pretty	Github		The way you like them.
+Housings_QFP	${KIGITHUB}/Housings_QFP.pretty	Github		The way you like them.
+Housings_SIP	${KIGITHUB}/Housings_SIP.pretty	Github		The way you like them.
+Housings_SOIC	${KIGITHUB}/Housings_SOIC.pretty	Github		The way you like them.
+Housings_SSOP	${KIGITHUB}/Housings_SSOP.pretty	Github		The way you like them.
+Inductors_NEOSID	${KIGITHUB}/Inductors_NEOSID.pretty	Github		The way you like them.
+Inductors	${KIGITHUB}/Inductors.pretty	Github		The way you like them.
+IR-DirectFETs	${KIGITHUB}/IR-DirectFETs.pretty	Github		The way you like them.
+Labels	${KIGITHUB}/Labels.pretty	Github		The way you like them.
+LEDs	${KIGITHUB}/LEDs.pretty	Github		The way you like them.
+Measurement_Points	${KIGITHUB}/Measurement_Points.pretty	Github		The way you like them.
+Measurement_Scales	${KIGITHUB}/Measurement_Scales.pretty	Github		The way you like them.
+Mechanical_Sockets	${KIGITHUB}/Mechanical_Sockets.pretty	Github		DIN41612
+Microwave	${KIGITHUB}/Microwave.pretty	Github		The way you like them.
+Mounting_Holes	${KIGITHUB}/Mounting_Holes.pretty	Github		The way you like them.
+NF-Transformers_ETAL	${KIGITHUB}/NF-Transformers_ETAL.pretty	Github		The way you like them.
+Oddities	${KIGITHUB}/Oddities.pretty	Github		The way you like them.
+Opto-Devices	${KIGITHUB}/Opto-Devices.pretty	Github		The way you like them.
+Oscillators	${KIGITHUB}/Oscillators.pretty	Github		SI570, SI571
+PFF_PSF_PSS_Leadforms	${KIGITHUB}/PFF_PSF_PSS_Leadforms.pretty	Github		Allegro_ACS754_ACS755_ACS756_HallCurrentSensor
+Pin_Headers	${KIGITHUB}/Pin_Headers.pretty	Github		2.54mm pin headers.
+Potentiometers	${KIGITHUB}/Potentiometers.pretty	Github		The way you like them.
+Power_Integrations	${KIGITHUB}/Power_Integrations.pretty	Github		The way you like them.
+* Relays_ThroughHole	${KIGITHUB}/Relays_ThroughHole.pretty	Github		The way you like them.
+Resistors_SMD	${KIGITHUB}/Resistors_SMD.pretty	Github		The way you like them.
+* Resistors_ThroughHole	${KIGITHUB}/Resistors_ThroughHole.pretty	Github		The way you like them.
+Resistors_Universal	${KIGITHUB}/Resistors_Universal.pretty	Github		Experimental
+SMD_Packages	${KIGITHUB}/SMD_Packages.pretty	Github		This library content will be moved elsewhere. Don't add anything in it.
+* Sockets_BNC	${KIGITHUB}/Sockets_BNC.pretty	Github		The way you like them.
+* Sockets_Mini-Universal	${KIGITHUB}/Sockets_Mini-Universal.pretty	Github		Mate-N-Lok
+Sockets_MOLEX_KK-System	${KIGITHUB}/Sockets_MOLEX_KK-System.pretty	Github		The way you like them.
+Socket_Strips	${KIGITHUB}/Socket_Strips.pretty	Github		2.54mm socket strips.
+Sockets	${KIGITHUB}/Sockets.pretty	Github		The way you like them.
+* Sockets_WAGO734	${KIGITHUB}/Sockets_WAGO734.pretty	Github		The way you like them.
+Symbols	${KIGITHUB}/Symbols.pretty	Github		The way you like them.
+* Terminal_Blocks	${KIGITHUB}/Terminal_Blocks.pretty	Github		WAGO236-RM5mm
+TO_SOT_Packages_SMD	${KIGITHUB}/TO_SOT_Packages_SMD.pretty	Github		The way you like them.
+TO_SOT_Packages_THT	${KIGITHUB}/TO_SOT_Packages_THT.pretty	Github		The way you like them.
+Transformers_CHK	${KIGITHUB}/Transformers_CHK.pretty	Github		The way you like them.
+Transformers_SMPS_ThroughHole	${KIGITHUB}/Transformers_SMPS_ThroughHole.pretty	Github		The way you like them.
+Transistors_OldSowjetAera	${KIGITHUB}/Transistors_OldSowjetAera.pretty	Github		The way you like them.
+Valves	${KIGITHUB}/Valves.pretty	Github		The way you like them.
+Varistors	${KIGITHUB}/Varistors.pretty	Github		The way you like them.
+Wire_Connections_Bridges	${KIGITHUB}/Wire_Connections_Bridges.pretty	Github		The way you like them.
+Wire_Pads	${KIGITHUB}/Wire_Pads.pretty	Github		The way you like them.
+fp	C:/Users/guill/Documents/GitHub/kicad/modbox-lcd/fp.pretty	KiCad		
+SMS1010-08H04	C:/Users/guill/OneDrive/melbot/PCBs/SMS1010-08H04 .pretty	KiCad		
+PCB_2	C:/Users/guill/OneDrive/carlos sim coach/PCB/PCB_2	KiCad		
+Battery_Holders	$(KISYSMOD)/Battery_Holders.pretty-master	KiCad		
+footprints	C:/Users/guill/OneDrive/melbot/PCBs/footprints	KiCad		
+fp1	C:/Users/guill/OneDrive/avryde2000/poopet/PCB/fp.pretty	KiCad		
+devices	C:/Users/guill/OneDrive/ruleta/ruletone/pcb/cctalk_bus/devices.pretty	KiCad		
+Teensy	$(KISYSMOD)/Teensy	KiCad		
+JST-XH	C:/Users/guill/OneDrive/avryde2000/poopet/PCB/fp.pretty/JST-XH	KiCad		
+
+

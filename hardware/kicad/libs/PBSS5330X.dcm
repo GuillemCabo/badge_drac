@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PBSS5330X
+D 30 Vce, 3A Ic, PNP, SOT-89
+K BC807 BC327 Equivalent
+F http://www.fairchildsemi.com/ds/BC/BC807.pdf
+$ENDCMP
+#
+#End Doc Library

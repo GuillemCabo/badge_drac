@@ -1,0 +1,495 @@
+EESchema Schematic File Version 4
+LIBS:drac_badge-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title "keysafe"
+Date "2018-06-05"
+Rev "rev1"
+Comp "AVRYDE 2000 S.L.U."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L drac_badge-rescue:AVR-ISP-6-keysafe_v1-rescue CON1
+U 1 1 5AEAFACA
+P 1650 1000
+F 0 "CON1" H 1545 1240 50  0000 C CNN
+F 1 "AVR-ISP-6" H 1385 770 50  0000 L BNN
+F 2 "fp1:MERGED_TAGCONNECT_2.54mm" V 1130 1040 50  0001 C CNN
+F 3 "" H 1625 1000 50  0001 C CNN
+F 4 "NONE" H 0   0   50  0001 C CNN "FARNELL #"
+F 5 "NONE" H 0   0   50  0001 C CNN "MPN"
+F 6 "" H 0   0   50  0001 C CNN "PLACE"
+F 7 "" H 0   0   50  0001 C CNN "RS #"
+	1    1650 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5AEAFAED
+P 2225 1125
+F 0 "#PWR016" H 2225 875 50  0001 C CNN
+F 1 "GND" H 2225 975 50  0000 C CNN
+F 2 "" H 2225 1125 50  0001 C CNN
+F 3 "" H 2225 1125 50  0001 C CNN
+	1    2225 1125
+	1    0    0    -1  
+$EndComp
+Text GLabel 2425 1000 2    60   Input ~ 0
+MOSI
+Text GLabel 1100 1025 0    60   Input ~ 0
+SCK
+Text GLabel 1100 1150 0    60   Input ~ 0
+RST
+Text GLabel 1100 900  0    60   Input ~ 0
+MISO
+Wire Wire Line
+	1750 900  2225 900 
+Wire Wire Line
+	2225 1125 2225 1100
+Wire Wire Line
+	2225 1100 1750 1100
+Wire Wire Line
+	2425 1000 1750 1000
+Wire Wire Line
+	1500 900  1100 900 
+Wire Wire Line
+	1100 1025 1200 1025
+Wire Wire Line
+	1200 1025 1200 1000
+Wire Wire Line
+	1200 1000 1500 1000
+Wire Wire Line
+	1100 1150 1225 1150
+Wire Wire Line
+	1225 1150 1225 1100
+Wire Wire Line
+	1225 1100 1500 1100
+$Comp
+L power:GND #PWR0104
+U 1 1 5AF1D795
+P 4400 3775
+F 0 "#PWR0104" H 4400 3525 50  0001 C CNN
+F 1 "GND" H 4400 3625 50  0000 C CNN
+F 2 "" H 4400 3775 50  0001 C CNN
+F 3 "" H 4400 3775 50  0001 C CNN
+	1    4400 3775
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7225 2875 2    60   Input ~ 0
+MISO
+Text GLabel 7100 3925 2    60   Input ~ 0
+RST
+Text GLabel 7250 3025 2    60   Input ~ 0
+SCK
+Text GLabel 7225 2750 2    60   Input ~ 0
+MOSI
+$Comp
+L drac_badge-rescue:C-keysafe_v1-rescue C3
+U 1 1 5AF1D7A2
+P 4400 3525
+F 0 "C3" H 4425 3625 50  0000 L CNN
+F 1 "10uF" H 4425 3425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4438 3375 50  0001 C CNN
+F 3 "" H 4400 3525 50  0001 C CNN
+F 4 "FALSE" H 4400 3525 50  0001 C CNN "PLACE"
+F 5 "2776900" H 4400 3525 50  0001 C CNN "FARNELL #"
+F 6 "C0805X106K9RACTU" H 0   0   50  0001 C CNN "MPN"
+F 7 "" H 0   0   50  0001 C CNN "RS #"
+	1    4400 3525
+	-1   0    0    -1  
+$EndComp
+$Comp
+L drac_badge-rescue:C-keysafe_v1-rescue C2
+U 1 1 5AF1D7AB
+P 4200 3525
+F 0 "C2" H 4225 3625 50  0000 L CNN
+F 1 "0.1uf" H 4225 3425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4238 3375 50  0001 C CNN
+F 3 "" H 4200 3525 50  0001 C CNN
+F 4 "FALSE" H 4200 3525 50  0001 C CNN "PLACE"
+F 5 "2409037" H 4200 3525 50  0001 C CNN "FARNELL #"
+F 6 "C0603C104J5RACTU" H 0   0   50  0001 C CNN "MPN"
+F 7 "" H 0   0   50  0001 C CNN "RS #"
+	1    4200 3525
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7675 4250 2    60   Input ~ 0
+LED_RED
+Wire Wire Line
+	4200 3775 4400 3775
+Wire Wire Line
+	4400 1925 4400 3275
+Wire Wire Line
+	4400 3775 4400 3675
+Wire Wire Line
+	4200 3275 4200 3375
+Connection ~ 4400 3275
+Wire Wire Line
+	4200 3775 4200 3675
+Connection ~ 4400 3775
+Wire Wire Line
+	4550 3775 4550 4700
+Wire Wire Line
+	4550 4700 4725 4700
+Wire Wire Line
+	4400 3275 4200 3275
+Wire Wire Line
+	7100 3925 6625 3925
+Wire Wire Line
+	6625 2825 7175 2825
+Wire Wire Line
+	7175 2825 7175 2875
+Wire Wire Line
+	7175 2875 7225 2875
+Wire Wire Line
+	7250 3025 7100 3025
+Wire Wire Line
+	7100 3025 7100 2925
+Wire Wire Line
+	7100 2925 6625 2925
+Wire Wire Line
+	7450 3850 7450 3825
+Wire Wire Line
+	7450 3825 6625 3825
+Wire Wire Line
+	7875 4175 7100 4175
+Text GLabel 6625 4425 2    60   Input ~ 0
+LED_GREEN
+Wire Wire Line
+	4400 1925 4575 1925
+Connection ~ 4575 1925
+NoConn ~ 6625 2125
+Wire Wire Line
+	7625 3050 7625 3150
+Wire Wire Line
+	7625 3150 6725 3150
+Wire Wire Line
+	6725 3150 6725 3125
+Wire Wire Line
+	6725 3125 6625 3125
+Wire Wire Line
+	4400 3275 4400 3375
+Wire Wire Line
+	4400 3775 4550 3775
+Wire Wire Line
+	6950 4250 7675 4250
+Wire Wire Line
+	7875 4175 7875 4100
+Wire Wire Line
+	7875 4100 8075 4100
+Wire Wire Line
+	6625 4225 6725 4225
+Wire Wire Line
+	6725 4225 6725 4200
+Wire Wire Line
+	6725 4200 7100 4200
+Wire Wire Line
+	7100 4200 7100 4175
+Wire Wire Line
+	6625 4325 6950 4325
+Wire Wire Line
+	6950 4325 6950 4250
+Text GLabel 7625 3050 2    60   Input ~ 0
+BATT_SENSE_EN
+Text GLabel 7650 3325 2    60   Input ~ 0
+BATT_SENSE
+Wire Wire Line
+	6625 3325 7650 3325
+$Comp
+L drac_badge-rescue:SW_Push-keysafe_v1-rescue SW1
+U 1 1 5AF1D850
+P 8650 3125
+F 0 "SW1" H 8700 3225 50  0000 L CNN
+F 1 "SW_Push" H 8650 3065 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_Push_1P1T_NO_CK_KSC7xxJ" H 8650 3325 50  0001 C CNN
+F 3 "" H 8650 3325 50  0001 C CNN
+F 4 "TRUE" H 8650 3125 50  0001 C CNN "PLACE"
+F 5 "2079467 " H 8650 3125 50  0001 C CNN "FARNELL #"
+F 6 "EVQPUK02K" H -475 -950 50  0001 C CNN "MPN"
+F 7 "" H -475 -950 50  0001 C CNN "RS #"
+	1    8650 3125
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5AF1D857
+P 8650 3325
+F 0 "#PWR0107" H 8650 3075 50  0001 C CNN
+F 1 "GND" H 8650 3175 50  0000 C CNN
+F 2 "" H 8650 3325 50  0001 C CNN
+F 3 "" H 8650 3325 50  0001 C CNN
+	1    8650 3325
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	8650 2675 8650 2925
+Wire Wire Line
+	6975 2175 6975 2225
+Wire Wire Line
+	6975 2225 6625 2225
+Wire Wire Line
+	4725 4700 4725 5225
+Wire Wire Line
+	5150 1925 5150 1625
+Wire Wire Line
+	5150 1625 6025 1625
+Wire Wire Line
+	4575 1925 5150 1925
+Wire Wire Line
+	6125 1625 6125 1450
+Wire Wire Line
+	6125 1450 5325 1450
+Wire Wire Line
+	5325 1450 5325 2675
+NoConn ~ 6625 3425
+NoConn ~ 6625 4025
+Wire Wire Line
+	8325 3625 8325 3150
+Wire Wire Line
+	8325 3150 8475 3150
+Wire Wire Line
+	8475 3150 8475 2675
+Wire Wire Line
+	8475 2675 8650 2675
+Text GLabel 9800 3850 2    60   Input ~ 0
+SCLK_ACC
+Text GLabel 9800 3725 2    60   Input ~ 0
+SDA_ACC
+Wire Wire Line
+	4575 1925 4575 2675
+Wire Wire Line
+	4575 2675 5325 2675
+NoConn ~ 6625 4925
+Wire Wire Line
+	7225 2725 7225 2750
+Wire Wire Line
+	6625 2725 7225 2725
+Text Notes 8850 650  0    118  ~ 0
+Demultiplex PWM signal
+Text GLabel 6900 2500 2    60   Input ~ 0
+PWM0
+Text GLabel 6900 2625 2    60   Input ~ 0
+PWM1
+Wire Wire Line
+	6625 2625 6900 2625
+Wire Wire Line
+	6625 2525 6825 2525
+Wire Wire Line
+	6825 2525 6825 2500
+Wire Wire Line
+	6825 2500 6900 2500
+Text GLabel 10325 950  0    60   Input ~ 0
+PWM0
+Text GLabel 10175 1625 0    60   Input ~ 0
+PWM1
+Text GLabel 10825 950  2    60   Input ~ 0
+PWM_R
+Text GLabel 10825 1150 2    60   Input ~ 0
+PWM_G
+Text GLabel 10675 1625 2    60   Input ~ 0
+PWM_B
+Text GLabel 10675 1825 2    60   Input ~ 0
+PWM_BUZZ
+Text GLabel 4575 1925 1    60   Input ~ 0
+V_CORE
+Text GLabel 2275 875  2    60   Input ~ 0
+V_CORE
+Wire Wire Line
+	2275 875  2225 875 
+Wire Wire Line
+	2225 875  2225 900 
+Text GLabel 10800 800  2    60   Input ~ 0
+V_CORE
+Text GLabel 10650 1475 2    60   Input ~ 0
+V_CORE
+$Comp
+L drac_badge-rescue:ATtiny88-MU-MCU_Microchip_ATtiny U1
+U 1 1 5AF1B59F
+P 6025 3425
+F 0 "U1" H 5495 3471 50  0000 R CNN
+F 1 "ATtiny88-MU" H 5495 3380 50  0000 R CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 6025 3425 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc8008.pdf" H 6025 3425 50  0001 C CNN
+F 4 "TRUE" H 6025 3425 50  0001 C CNN "PLACE"
+F 5 "1748549 " H 6025 3425 50  0001 C CNN "FARNELL #"
+F 6 "ATTINY88-MU" H 0   0   50  0001 C CNN "MPN"
+F 7 "" H 0   0   50  0001 C CNN "RS #"
+	1    6025 3425
+	1    0    0    -1  
+$EndComp
+Text GLabel 6625 1925 2    60   Input ~ 0
+SELECT_PWM0
+Text GLabel 6625 2025 2    60   Input ~ 0
+SELECT_PWM1
+Text GLabel 10325 1150 0    60   Input ~ 0
+SELECT_PWM0
+Text GLabel 10175 1825 0    60   Input ~ 0
+SELECT_PWM1
+Wire Wire Line
+	10650 1475 10425 1475
+Wire Wire Line
+	10425 1475 10425 1575
+Wire Wire Line
+	10575 800  10575 900 
+Text GLabel 8075 4100 2    60   Input ~ 0
+LED_BLUE
+$Comp
+L drac_badge-rescue:BSS138-keysafe_v1-rescue Q?
+U 1 1 5D72627F
+P 8075 1950
+AR Path="/5AEB3083/5D72627F" Ref="Q?"  Part="1" 
+AR Path="/5AEAF340/5D72627F" Ref="Q2"  Part="1" 
+F 0 "Q2" H 8275 2025 50  0000 L CNN
+F 1 "BSS138" H 8275 1950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8275 1875 50  0001 L CIN
+F 3 "" H 8075 1950 50  0001 L CNN
+F 4 "1907611" H 6725 -800 50  0001 C CNN "FARNELL #"
+F 5 "BSS138PW" H 6725 -800 50  0001 C CNN "MPN"
+F 6 "" H 6725 -800 50  0001 C CNN "PLACE"
+F 7 "" H 6725 -800 50  0001 C CNN "RS #"
+	1    8075 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5D728E0F
+P 8175 2150
+F 0 "#PWR0105" H 8175 1900 50  0001 C CNN
+F 1 "GND" H 8175 2000 50  0000 C CNN
+F 2 "" H 8175 2150 50  0001 C CNN
+F 3 "" H 8175 2150 50  0001 C CNN
+	1    8175 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7875 2175 7875 2000
+Wire Wire Line
+	6975 2175 7875 2175
+Text GLabel 8175 1450 1    60   Input ~ 0
+GATED_GND
+Wire Wire Line
+	10425 1875 10425 2000
+Wire Wire Line
+	10425 2000 10475 2000
+Wire Wire Line
+	10575 1200 10575 1300
+Wire Wire Line
+	10575 1300 10650 1300
+Wire Wire Line
+	6025 5225 4725 5225
+Text GLabel 6625 4825 2    60   Input ~ 0
+SENS_AMB
+Text GLabel 6925 2375 2    60   Input ~ 0
+SENS_T0
+Wire Wire Line
+	6625 2400 6800 2400
+Wire Wire Line
+	6800 2400 6800 2375
+Wire Wire Line
+	6800 2375 6925 2375
+Wire Wire Line
+	6625 2425 6625 2400
+$Comp
+L Connector_Generic:Conn_02x03_Counter_Clockwise J5
+U 1 1 5D843D65
+P 10000 4850
+F 0 "J5" H 10050 5167 50  0000 C CNN
+F 1 "Conn_02x03_Counter_Clockwise" H 10050 5076 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical_SMD" H 10000 4850 50  0001 C CNN
+F 3 "~" H 10000 4850 50  0001 C CNN
+	1    10000 4850
+	1    0    0    -1  
+$EndComp
+Text Notes 9775 4450 0    60   ~ 0
+Expansion Header
+Text GLabel 9800 4850 0    60   Input ~ 0
+SCLK_ACC
+Text GLabel 9800 4950 0    60   Input ~ 0
+SDA_ACC
+$Comp
+L power:GND #PWR07
+U 1 1 5D845421
+P 10300 4750
+F 0 "#PWR07" H 10300 4500 50  0001 C CNN
+F 1 "GND" H 10300 4600 50  0000 C CNN
+F 2 "" H 10300 4750 50  0001 C CNN
+F 3 "" H 10300 4750 50  0001 C CNN
+	1    10300 4750
+	0    -1   1    0   
+$EndComp
+Text GLabel 9800 4750 0    60   Input ~ 0
+V_CORE
+Text GLabel 6625 4525 2    60   Input ~ 0
+EXP_GPIO0
+Text GLabel 6625 4625 2    60   Input ~ 0
+EXP_GPIO1
+Text GLabel 10300 4850 2    60   Input ~ 0
+EXP_GPIO0
+Text GLabel 10300 4950 2    60   Input ~ 0
+EXP_GPIO1
+Text GLabel 6625 4725 2    60   Input ~ 0
+LED_IR
+Text GLabel 6625 3625 2    60   Input ~ 0
+SENS_T1
+NoConn ~ 6625 3025
+Wire Wire Line
+	10800 800  10575 800 
+Text GLabel 10475 2000 2    60   Input ~ 0
+GATED_GND
+Text GLabel 10650 1300 2    60   Input ~ 0
+GATED_GND
+$Comp
+L my_74lvc1g19:my_74LVC1G19 U4
+U 1 1 5D719312
+P 10575 1050
+F 0 "U4" H 10575 1526 50  0000 C CNN
+F 1 "my_74LVC1G19" H 10575 1435 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 10575 1050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 10575 1050 50  0001 C CNN
+	1    10575 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L my_74lvc1g19:my_74LVC1G19 U3
+U 1 1 5D71B6BE
+P 10425 1725
+F 0 "U3" H 10425 2201 50  0000 C CNN
+F 1 "my_74LVC1G19" H 10425 2110 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 10425 1725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 10425 1725 50  0001 C CNN
+	1    10425 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D71EC3B
+P 8175 1650
+F 0 "#FLG0101" H 8175 1725 50  0001 C CNN
+F 1 "PWR_FLAG" V 8175 1777 50  0000 L CNN
+F 2 "" H 8175 1650 50  0001 C CNN
+F 3 "~" H 8175 1650 50  0001 C CNN
+	1    8175 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8175 1450 8175 1650
+Connection ~ 8175 1650
+Wire Wire Line
+	8175 1650 8175 1750
+Wire Wire Line
+	8325 3625 7200 3625
+Wire Wire Line
+	7200 3625 7200 3525
+Wire Wire Line
+	7200 3525 6625 3525
+Wire Wire Line
+	6625 3725 9800 3725
+Wire Wire Line
+	7450 3850 9800 3850
+$EndSCHEMATC
