@@ -5,13 +5,14 @@
 
 void setup(){
     pins_init();
+    digitalWrite(ENABLE_GATED_GND,LOW);
+    digitalWrite(SELECT_PWM1,LOW);
 }
 
 void loop(){
 //_____________________________
 // TEST PROGRAM
 //_____________________________
-    blink(GREEN_CHEEK);
-    blink(RED_CHEEK);
-    blink(BLUE_CHEEK);
+    fastblink(LED_GREEN);
+    fastblink(PWM1);
 }
