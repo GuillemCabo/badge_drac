@@ -1,2 +1,2 @@
 //choose board
-#define __rev1__
+#define __rev1_patch__
